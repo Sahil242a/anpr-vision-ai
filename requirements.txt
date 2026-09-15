@@ -1,0 +1,28 @@
+# ANPR Vision AI - Python 3.10+
+#
+# Install with:
+#   python -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+#
+# GPU users: replace `paddlepaddle` with the CUDA build that matches your
+# toolkit (see https://www.paddlepaddle.org.cn/install/quick), and install the
+# CUDA build of torch before ultralytics if you want GPU inference:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+
+# --- core CV / ML ---------------------------------------------------------
+ultralytics>=8.3.0,<9.0.0        # YOLO detection + ByteTrack/BoT-SORT tracking
+opencv-python>=4.9.0             # use opencv-python-headless on a server
+numpy>=1.24.0,<3.0.0
+torch>=2.0.0                     # pulled in by ultralytics; pinned for clarity
+
+# --- OCR ------------------------------------------------------------------
+paddlepaddle>=2.6.0              # CPU build; swap for paddlepaddle-gpu on CUDA
+paddleocr>=2.7.0
+
+# --- data / app -----------------------------------------------------------
+pandas>=2.0.0
+streamlit>=1.32.0
+plotly>=5.18.0
+
+# --- tests ----------------------------------------------------------------
+pytest>=8.0.0

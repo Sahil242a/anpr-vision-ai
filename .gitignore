@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Model weights - never commit binaries
+*.pt
+*.pth
+*.onnx
+*.engine
+models/*.pt
+
+# Data and generated artefacts
+data/*.db
+data/output/*
+data/crops/*
+data/input/*
+!data/**/.gitkeep
+
+# PaddleOCR / Ultralytics caches
+.paddleocr/
+inference/
+runs/
+*.log
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Streamlit
+.streamlit/secrets.toml
+!models/README.md

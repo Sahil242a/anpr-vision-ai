@@ -56,26 +56,6 @@ its time on screen — and those few, aggregated, beat ninety independent ones.
 
 ---
 
-## Demo
-
-> Add a short screen recording here once you have run it on your own footage.
->
-> ```
-> docs/demo.gif
-> ```
-
-Annotated output shows, per vehicle:
-
-```
-CAR #17
-Plate: UP32AB1234
-OCR: 94%
-```
-
-with the plate box colour-coded by validation status (green = valid format,
-amber = suspicious, red = low confidence).
-
----
 
 ## Architecture
 
